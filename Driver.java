@@ -23,5 +23,6 @@ public static void main(String[] args){
   }
   System.out.println(mine);
   System.out.println(mine.transferTo(yours, 20, "Hello"));
+  System.out.println(yours.transferTo(mine, 100, "Yo"));
 }
 }
