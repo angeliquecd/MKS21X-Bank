@@ -21,8 +21,11 @@ public static void main(String[] args){
   else{
     System.out.println("Withdrawal failure!");
   }
+  System.out.println("starts"+mine);
+  System.out.println(yours);
+  System.out.println(mine.transferTo(yours, 20.00, "Hello"));
+//  System.out.println(yours.transferTo(mine, 100, "Yo"));
+  System.out.println(yours);
   System.out.println(mine);
-  System.out.println(mine.transferTo(yours, 20, "Hello"));
-  System.out.println(yours.transferTo(mine, 100, "Yo"));
 }
 }
