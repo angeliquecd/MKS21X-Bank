@@ -40,6 +40,11 @@ public class BankAccount{
     return (this.password.equals(password));
   }
   public boolean transferTo(BankAccount other, double amount,String password){
-    return this.authenticate(password)&& amount<=this.balance&& amount>0;
+    if(this.authenticate(password)&& amount<=this.balance&& amount>0){
+      this.balance-=amount;
+      other.balance+=amount;
+      return true;
+    }
+    return false;
     }
   }
